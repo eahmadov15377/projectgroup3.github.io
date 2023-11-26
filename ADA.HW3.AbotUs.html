@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="ADA.HW3.AbotUs.css">
+    <script src="AbotUs.js"></script>
+</head>
+
+<body>
+
+    <section id="about-us" class="fade-in"> <!-- Add the fade-in class to the section -->
+        <header class="fade-in"> <!-- Add the fade-in class to the header -->
+            <img src="https://th.bing.com/th/id/OIP.DJ86_gPuP_8D4FwWLQHGowHaEw?rs=1&pid=ImgDetMain" alt="Логотип команды"
+                class="logo fade-in">
+            <h1 class="fade-in">Our team members</h1>
+            <nav class="fade-in">
+                <ul class="fade-in">
+                    <li><a href="ADA.HW3.html">Home</a></li>
+                    <li><a href="HourOfCode.html">Hour of Code</a></li>
+                    <li><a href="WebDev.html">Web Development</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="team-members-container fade-in"> <!-- Add the fade-in class to the team members container -->
+            <div class="team-member fade-in" onclick="openModal('Eljan Ahmadov', 'Ozum.jpg', 'Some description about Eljan Ahmadov','https://www.codecademy.com/profiles/eahmadov15377')">
+                <h4>Eljan Ahmadov</h4>
+                <img src="Ozum.jpg" alt="Участник 1">
+            </div>
+
+            <div class="team-member fade-in" onclick="openModal('Mubariz Amirli', 'M.Amirli.jpg', 'Some description about Mubariz Amirli','https://www.codecademy.com/profiles/mamirli19966')">
+                <h4>Mubariz Amirli</h4>
+                <img src="M.Amirli.jpg" alt="Участник 2">
+            </div>
+
+            <div class="team-member fade-in" onclick="openModal('Nariman Huseynov', 'N.Huseynov.jpg', 'Some description about Nariman Huseynov','https://www.codecademy.com/profiles/NarimanHuseynov')">
+                <h4>Nariman Huseynov</h4>
+                <img src="N.Huseynov.jpg" alt="Участник 3">
+            </div>
+
+            <div class="team-member fade-in" onclick="openModal('Shamil Zeynalov', 'S.Zeynalov.jpg', 'Some description about Shamil Zeynalov')">
+                <h4>Shamil Zeynalov</h4>
+                <img src="S.Zeynalov.jpg" alt="Участник 4">
+            </div>
+            
+        </div>
+        <div id="myModal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImg" class="modal-content" onclick="toggleZoom()">
+            <div id="caption" class="description"></div>
+        </div>
+        <footer>
+            <small>SITE 1101 Principles of Information Systems Fall 2023 <br></small>
+            <p>&copy; ADA University</p>
+        </footer>
+    </section>
+</body>
+
+</html>
